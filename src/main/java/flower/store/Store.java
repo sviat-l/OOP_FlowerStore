@@ -9,14 +9,15 @@ public class Store {
     public Store() {
         allFlowerBuckets = new HashSet<>();
     }
-    public void add(FlowerBucket flowerBucket){
+
+    public void add(FlowerBucket flowerBucket) {
         allFlowerBuckets.add(flowerBucket);
     }
 
-    public Set<FlowerBucket> search(Set<FlowerType> flowerTypes){
+    public Set<FlowerBucket> search(Set<FlowerType> flowerTypes) {
         Set<FlowerBucket> validBuckets = new HashSet<>();
-        for (FlowerBucket flowerBucket:this.allFlowerBuckets){
-            if (flowerBucket.getAllFlowerTypes().equals(flowerTypes)){
+        for (FlowerBucket flowerBucket : this.allFlowerBuckets) {
+            if (flowerBucket.getAllFlowerTypes().equals(flowerTypes)) {
                 validBuckets.add(flowerBucket);
             }
         }
