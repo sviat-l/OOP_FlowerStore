@@ -1,7 +1,7 @@
 package flower.store;
 
-public class Chamomile extends Flower{
-    public Chamomile(){
+public class Chamomile extends Flower {
+    public Chamomile() {
         super();
         this.setColor(FlowerColor.YELLOW);
     }

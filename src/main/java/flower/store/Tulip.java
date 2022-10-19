@@ -1,7 +1,7 @@
 package flower.store;
 
-public class Tulip extends Flower{
-    public Tulip(){
+public class Tulip extends Flower {
+    public Tulip() {
         super();
         this.setColor(FlowerColor.WHITE);
     }
