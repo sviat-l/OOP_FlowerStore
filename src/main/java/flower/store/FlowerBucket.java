@@ -2,7 +2,7 @@ package flower.store;
 
 import lombok.Getter;
 
-;import java.util.HashSet;
+import java.util.HashSet;
 import java.util.Set;
 
 @Getter
@@ -20,11 +20,10 @@ public class FlowerBucket {
     }
 
     public double getPrice() {
-        double price = 0.0;
+        price = 0.0;
         for (FlowerPack flowerpack : this.bucket) {
             price += flowerpack.getPrice();
         }
-        this.price = price;
         return price;
     }
 
